@@ -1,0 +1,274 @@
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px
+}
+.container {
+    width: 1200px;
+    margin: auto;
+    min-width: 1200px
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+h2, h3, h4 {
+    font-weight: normal
+}
+
+.navbar, .header{min-width: 1200px}
+
+/* Start Navbar */
+
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 25px
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent
+}
+
+.navbar .links li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+    color: #1abc9c
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+    background: url("#{resource['images/homeImage2.jpg']}");  
+    position: relative
+}
+
+.header .overlay {
+    background-color: rgba(0, 0 ,0 , 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1
+}
+
+.header .bx-wrapper {
+    height: 100%
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {
+    height: 100%
+}
+
+.header .bxslider li {
+    display: block
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bxslider li h2 span {
+    color: #1abc9c;
+}
+
+.welcome{
+	color: white;
+	font-size: 44px;
+	text-align: center; 
+	position: absolute;
+	display: inline-block;
+}
+
+/* custom select */
+
+select{
+	 border-radius:15px;
+	 background-color:#9ec3ff;
+ 	 padding:4px;
+}
+/* end custom select */ 
+
+/* start custom panel*/
+/*
+ * See it in action here: http://jsfiddle.net/seydoggy/6s92p51a/
+ */
+.panel-table {
+    display:table;
+    border:1 px solid black; 
+}
+.panel-table > .panel-heading {
+    display: table-header-group;
+    background: transparent;
+}
+.panel-table > .panel-body {
+    display: table-row-group;
+}
+.panel-table > .panel-body:before,
+.panel-table > .panel-body:after {
+    content:none;
+}
+.panel-table > .panel-footer {
+    display: table-footer-group;
+    background: transparent;
+}
+.panel-table > div > .tr {
+    display: table-row;
+}
+.panel-table > div:last-child > .tr:last-child > .td {
+    border-bottom: none;
+}
+.panel-table .td {
+    display: table-cell;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-left: none;
+}
+.panel-table .td:last-child {
+    border-right: none;
+}
+.panel-table > .panel-heading > .tr > .td,
+.panel-table > .panel-footer > .tr > .td {
+    background-color: #f5f5f5;
+}
+.panel-table > .panel-heading > .tr > .td:first-child {
+    border-radius: 4px 0 0 0;
+}
+.panel-table > .panel-heading > .tr > .td:last-child {
+    border-radius: 0 4px 0 0;
+}
+.panel-table > .panel-footer > .tr > .td:first-child {
+    border-radius: 0 0 0 4px;
+}
+.panel-table > .panel-footer > .tr > .td:last-child {
+    border-radius: 0 0 4px 0;
+}
+/* end custom panel */ 
+
+/* Start search page */
+.search .search-bar{
+	margin-left: 10px;
+	margin-top: 10px;
+    border-radius : 3px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    height: 37px;
+    line-height: 35px
+}
+.search .form-search {
+    padding: 20px 0;
+    width: 700px;
+    margin: auto;
+}
+
+
+.action-button  {
+    padding: 10px;
+    width: 200px;
+    border: 1px s;
+    background-color: #1abc9c;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px; 
+    text-decoration: none
+}
+.search .panel-table{
+	margin: 0 auto; 
+	border: 1px solid black; 
+}
+.search .form-search {
+    padding: 20px 30px;
+}
+/* End search  */
+
+
+/* start page trip page*/ 
+.trip .champ{
+	margin-left: 10px;
+	margin-top: 10px;
+    border-radius : 3px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    height: 20px;
+    line-height: 35px
+}
+
+.trip .text{
+	width: 150px; 
+	display:inline-block;
+}
+.trip .field{
+	width: 40%; 
+	height:250px;
+	padding:30px;
+	padding-top: 20px;
+	margin: 0 auto; 
+	margin-top:40px;
+	text-align: center;
+}
+.label {
+  color: white;
+  padding: 8px;
+}
+
+.other {
+	background-color: #e7e7e7; color: black;
+	margin : 6px;
+	display: inline-block;
+	} 

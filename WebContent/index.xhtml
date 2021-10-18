@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+      
+      <h:head>
+<title>Test Tags</title>
+
+<link href="./resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="./resources/css/style.css" rel="stylesheet" type="text/css"/> 
+
+	</h:head>
+<h:body>
+
+
+		
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<h:form>
+							<div class="form-group">
+								<div class="form-checkbox">
+									<label for="roundtrip">
+										<h:outputText value = "AGP-Maldives" style="font-weight:bold"/>
+										<span></span>
+									</label>
+		
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Mots clées</span>
+										<h:inputText class="form-control" type="text" p:placeholder="Mots clées" value="#{searchBean.keyWords}"/>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Budget</span>
+										<h:inputText class="form-control" type="text" p:placeholder="Vote Budget Maximum" value="#{searchBean.budget}"/>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Date</span>
+										<h:inputText class="form-control" type="text" p:placeholder="DD-MM-YY" value="#{searchBean.dateEntry}"/>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Nombre de jours</span>
+										<h:inputText class="form-control" type="text" p:placeholder="Nombre de jours de sejour" value="#{searchBean.numberDays}" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">distance max de</span>
+									<h:selectOneMenu class="form-control" value="#{searchBean.distance}">
+										<f:selectItem itemValue="" itemLabel="disatance max" />
+										<f:selectItem itemValue="5" itemLabel="5 Km" />
+										<f:selectItem itemValue="10" itemLabel="10 Km" />
+										<f:selectItem itemValue="15" itemLabel="15 Km" />
+										<f:selectItem itemValue="20" itemLabel="20 Km" />
+									</h:selectOneMenu>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Etoile</span>
+										<h:selectOneMenu class="form-control" value="#{searchBean.intensity}">
+										<f:selectItem itemValue="" itemLabel="Intensité" />
+										<f:selectItem itemValue="0" itemLabel="0" />
+										<f:selectItem itemValue="1" itemLabel="1" />
+										<f:selectItem itemValue="2" itemLabel="2" />
+									</h:selectOneMenu>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Catégorie</span>
+										
+									<h:selectOneMenu class="form-control" value="#{searchBean.siteType}">
+										<f:selectItem itemValue="" itemLabel="Catégorie de site" />
+										<f:selectItem itemValue="historic" itemLabel="Monument historique" />
+										<f:selectItem itemValue="activity" itemLabel="Activité" />
+									</h:selectOneMenu>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+									<h:commandLink  class="action-button" action="#{searchBean.findSitesNames}"  value="Trouver un site"/>
+									</div>
+								</div>
+							</div>
+						</h:form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</h:body>
+</html>
